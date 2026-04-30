@@ -13,7 +13,7 @@ from __future__ import annotations
 from typing import List
 
 from models.entities import Customer, Dish, Order, OrderStatus, OrderType
-from src.repositories.repositories import (
+from repositories.repositories import (
     ICustomerRepository,
     IDishRepository,
     IOrderRepository,

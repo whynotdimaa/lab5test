@@ -13,12 +13,12 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 import unittest
 
 from models.entities import OrderStatus
-from src.repositories.repositories import (
+from repositories.repositories import (
     InMemoryCustomerRepository,
     InMemoryDishRepository,
     InMemoryOrderRepository,
 )
-from src.services.services import CustomerService, MenuService, OrderService
+from services.services import CustomerService, MenuService, OrderService
 from dto.schemas import (
     CreateCustomerDTO, CreateDishDTO, PlaceOrderDTO
 )

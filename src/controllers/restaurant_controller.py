@@ -11,8 +11,8 @@ controllers/restaurant_controller.py — точка входу (CLI-контро
 """
 from __future__ import annotations
 
-from src.dto.schemas import CreateCustomerDTO, CreateDishDTO, PlaceOrderDTO
-from src.services.services import CustomerService, MenuService, OrderService
+from dto.schemas import CreateCustomerDTO, CreateDishDTO, PlaceOrderDTO
+from services.services import CustomerService, MenuService, OrderService
 
 
 class RestaurantController:
@@ -112,7 +112,7 @@ def _build_controller() -> RestaurantController:
     import os
     sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-    from src.repositories.repositories import (
+    from repositories.repositories import (
         InMemoryCustomerRepository,
         InMemoryDishRepository,
         InMemoryOrderRepository,
